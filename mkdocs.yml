@@ -1,0 +1,30 @@
+site_name: NYAX документация
+docs_dir: mkdocs
+site_dir: docs
+nav:
+- NYAX: index.md
+- Начало: beginning.md
+theme:
+  name: material
+  palette:
+    # Автоматическое определение темы
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Переключить на светлую тему
+    # Светлая тема
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на темную тему
+    # Темная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на системную тему
